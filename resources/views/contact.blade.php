@@ -1,83 +1,131 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
-        <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Contact</h1>
-        <div class="d-inline-flex text-white">
-            <p class="m-0"><a class="text-white" href="">Home</a></p>
-            <p class="m-0 px-2">/</p>
-            <p class="m-0">Contact</p>
-        </div>
-    </div>
-    <!-- Page Header Start -->
 
+                <div class="page-content">
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center">
-                <small class="bg-primary text-white text-uppercase font-weight-bold text-center px-1">Get In Touch</small>
-                <h1 class="mt-2 mb-5">Contact For Any Queries</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="d-flex align-items-center border mb-3 p-4">
-                        <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Our Office</h5>
-                            <p class="m-0">123 Street, New York, USA</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border mb-3 p-4">
-                        <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Email Us</h5>
-                            <p class="m-0">info@example.com</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border mb-3 mb-md-0 p-4">
-                        <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Call Us</h5>
-                            <p class="m-0">+012 345 6789</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                    <!-- Page-Title -->
+                    <div class="page-title-box">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="page-title mb-1">Form Validation</h4>
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                                    <li class="breadcrumb-item active">Form Validation</li>
+                                    </ol>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block text-danger"></p>
+                                <div class="col-md-4">
+                                    <div class="float-right d-none d-md-block">
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="mdi mdi-settings-outline mr-1"></i> Settings
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Send Message</button>
-                            </div>
-                        </form>
+
+                        </div>
                     </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="page-content-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">Bootstrap Validation - Normal</h4>
+                                            <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p>
+
+                                            <form class="needs-validation" novalidate>
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">First name</label>
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom02">Last name</label>
+                                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustomUsername">Username</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                                            <div class="invalid-feedback">
+                                                            Please choose a username.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationCustom03">City</label>
+                                                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label>State</label>
+                                                        <select class="custom-select" required>
+                                                            <option value="">Open this select State</option>
+                                                            <option value="1">California</option>
+                                                            <option value="2">Nevada</option>
+                                                            <option value="3">Montana</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Example invalid custom select feedback</div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label>Zip</label>
+
+
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="validationCustomFile" required>
+                                                            <label class="custom-file-label" for="validationCustomFile">Choose file...</label>
+                                                            <div class="invalid-feedback">
+                                                                Example invalid custom file feedback
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
+                                                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end container-fluid -->
+                    </div>
+                    <!-- end page-content-wrapper -->
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
 @endsection
+                <!-- End Page-content -->

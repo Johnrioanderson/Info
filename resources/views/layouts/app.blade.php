@@ -1,126 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>DotCom - Creative Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <head>
+        <meta charset="utf-8" />
+        <title>Form Validation | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Begin page -->
+        <div id="layout-wrapper">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="container-fluid">
+                        <div class="float-right">
 
-<body>
-    <!-- Navbar Start -->
-    <div class="container-fluid nav-bar p-0">
-        <div class="container-lg p-0">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                <a href="/" class="navbar-brand">
-                    <h1 class="m-0 text-white display-4"><span class="text-primary">D</span>ot<span class="text-primary">C</span>om</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="{{ URL('/') }}" class="nav-item nav-link active">Home</a>
-                        <a href="{{ URL('/about') }}" class="nav-item nav-link">About</a>
-                        <a href="{{ URL('/contact') }}" class="nav-item nav-link">Contact</a>
+                            <div class="dropdown d-inline-block ml-2">
+                                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="mdi mdi-magnify"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-search-dropdown">
+
+                                    <form class="p-3">
+                                        <div class="form-group m-0">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="dropdown d-inline-block">
+                                <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                    <i class="mdi mdi-tune"></i>
+                                </button>
+                            </div>
+
+                            <div class="dropdown d-inline-block">
+                                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                                    <span class="d-none d-sm-inline-block ml-1">Smith</span>
+                                    <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-face-profile font-size-16 align-middle mr-1"></i> Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-credit-card-outline font-size-16 align-middle mr-1"></i> Billing</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-settings font-size-16 align-middle mr-1"></i> Settings</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock font-size-16 align-middle mr-1"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout font-size-16 align-middle mr-1"></i> Logout</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-dark.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="20">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-light.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="20">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm mr-2 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                        <div class="topnav">
+                            <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                                <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/contact">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
+
+
+            </header>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
 
     @yield('content')
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-white mt-5 pt-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="/" class="navbar-brand">
-                    <h1 class="m-0 mt-n2 text-white display-4"><span class="text-primary">D</span>ot<span class="text-primary">C</span>om</h1>
-                </a>
-                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                2020 © Xoric.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="font-weight-bold text-primary mb-4">Quick Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Pricing</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="font-weight-bold text-primary mb-4">Popular Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Pricing</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="font-weight-bold text-primary mb-4">Get In Touch</h5>
-                <p>Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>info@example.com</p>
-            </div>
+            <!-- end main content-->
+
         </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-            &copy; <a class="font-weight-semi-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-            <a class="font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-        </p>
-    </div>
-    <!-- Footer End -->
+        <!-- END layout-wrapper -->
 
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
+        <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
 
+        <!-- parsleyjs -->
+        <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+        <!-- validation init -->
+        <script src="assets/js/pages/form-validation.init.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="assets/js/app.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
+    </body>
 </html>

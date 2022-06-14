@@ -43,68 +43,69 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Bootstrap Validation - Normal</h4>
-                                            <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p>
+                                            <h4 class="header-title">Personal Information</h4>
+                                            {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
 
                                             <form class="needs-validation" novalidate>
                                                 <div class="row">
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom01">First name</label>
-                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="First name"  required>
+                                                        <div class="invalid-feedback">
+                                                            First Name is a required field!!
+                                                        </div>
                                                         <div class="valid-feedback">
                                                             Looks good!
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom02">Last name</label>
-                                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                                        <div class="invalid-feedback">
+                                                            Last Name is a required field!!
+                                                        </div>
                                                         <div class="valid-feedback">
                                                             Looks good!
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
-                                                        <label for="validationCustomUsername">Username</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                            </div>
-                                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                                                            <div class="invalid-feedback">
-                                                            Please choose a username.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="validationCustom03">City</label>
-                                                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                                        <label for="validationCustom03">Date of Birth</label>
+                                                        <input type="date" class="form-control" id="dob" placeholder="Date of Birth" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a valid city.
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3 mb-3">
-                                                        <label>State</label>
-                                                        <select class="custom-select" required>
-                                                            <option value="">Open this select State</option>
-                                                            <option value="1">California</option>
-                                                            <option value="2">Nevada</option>
-                                                            <option value="3">Montana</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Example invalid custom select feedback</div>
-                                                    </div>
-                                                    <div class="col-md-3 mb-3">
-                                                        <label>Zip</label>
-
-
-                                                        <div class="custom-file">
-                                                            <input type="file" class="custom-file-input" id="validationCustomFile" required>
-                                                            <label class="custom-file-label" for="validationCustomFile">Choose file...</label>
+                                                    <div class="col-md-4 mb-3">
+                                                            <label for="validationCustom02">Email</label>
+                                                            <input type="email" class="form-control" placeholder="Email"  required>
                                                             <div class="invalid-feedback">
-                                                                Example invalid custom file feedback
+                                                                Email is a required field!!
                                                             </div>
-                                                        </div>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
                                                     </div>
+                                                    <div class="col-md-4 mb-3">
+                                                            <label for="validationCustom02">Mobile</label>
+                                                            <input type="text" class="form-control" placeholder="Mobile Number"  required>
+                                                            <div class="invalid-feedback">
+                                                                Mobile is a required field!!
+                                                            </div>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                            <label for="validationCustom02">Application Number</label>
+                                                            <input type="text" class="form-control" id="app_number" placeholder="Application Number"  value="112" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                    </div>
+
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox">
@@ -116,6 +117,8 @@
                                                     </div>
                                                 </div>
                                                 <button class="btn btn-primary" type="submit">Submit form</button>
+
+
                                             </form>
                                         </div>
                                     </div>

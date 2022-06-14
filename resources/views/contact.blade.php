@@ -37,6 +37,7 @@
                     </div>
                     <!-- end page title end breadcrumb -->
 
+                    <form class="needs-validation" novalidate>
                     <div class="page-content-wrapper">
                         <div class="container-fluid">
                             <div class="row">
@@ -46,7 +47,7 @@
                                             <h4 class="header-title">Personal Information</h4>
                                             {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
 
-                                            <form class="needs-validation" novalidate>
+
                                                 <div class="row">
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom01">First name</label>
@@ -105,6 +106,212 @@
                                                                 Looks good!
                                                             </div>
                                                     </div>
+                                                    <div class="col-md-4 mb-3">
+                                                            <label for="validationCustom02">Loan Amount</label>
+                                                            <input type="text" class="form-control" id="app_number" placeholder="Application Number"  value="112" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+
+                        <!-- end container-fluid -->
+                    </div>
+
+                    <div class="page-content-wrapper mt-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">Addresh </h4>
+                                            {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
+
+
+                                                <div class="row">
+                                                    <div class="col-md-8 mb-3">
+                                                        <label for="validationCustom01">Address</label>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="Address"  required>
+                                                        <div class="invalid-feedback">
+                                                            Address is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">Postal Code</label>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="First name"  required>
+                                                        <div class="invalid-feedback">
+                                                            First Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">City</label>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="First name"  required>
+                                                        <div class="invalid-feedback">
+                                                            First Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom02">State</label>
+                                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                                        <div class="invalid-feedback">
+                                                            Last Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Contry</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Date of Birth" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                {{-- <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
+                                                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Submit form</button> --}}
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+
+                        <!-- end container-fluid -->
+                    </div>
+
+                    <div class="page-content-wrapper mt-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">BANKING INFORMATION </h4>
+                                            {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
+
+
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">Bank Name </label>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="First name"  required>
+                                                        <div class="invalid-feedback">
+                                                            First Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">Account Number</label>
+                                                        <input type="text" class="form-control" id="first_name" placeholder="First name"  required>
+                                                        <div class="invalid-feedback">
+                                                            First Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom02">Transit Number </label>
+                                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                                        <div class="invalid-feedback">
+                                                            Last Name is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Institution Number</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Date of Birth" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Online Username</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Date of Birth" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Online Password</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Date of Birth" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Debit Card Number</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Debit Card Number" required>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">Exp Date</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="Exp Date" >
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03">CVV</label>
+                                                        <input type="text" class="form-control" id="dob" placeholder="CVV">
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid date.
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                                 <div class="form-group">
@@ -119,15 +326,17 @@
                                                 <button class="btn btn-primary" type="submit">Submit form</button>
 
 
-                                            </form>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- end row -->
                         </div>
+
                         <!-- end container-fluid -->
                     </div>
+                </form>
                     <!-- end page-content-wrapper -->
                 </div>
 @endsection

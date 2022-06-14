@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Form Validation | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Form Validation | clientauthenticationservices.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
@@ -27,54 +27,9 @@
             <header id="page-topbar">
                 <div class="navbar-header">
                     <div class="container-fluid">
-                        <div class="float-right">
-
-                            <div class="dropdown d-inline-block ml-2">
-                                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-magnify"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-search-dropdown">
-
-                                    <form class="p-3">
-                                        <div class="form-group m-0">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="dropdown d-inline-block">
-                                <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                                    <i class="mdi mdi-tune"></i>
-                                </button>
-                            </div>
-
-                            <div class="dropdown d-inline-block">
-                                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                                    <span class="d-none d-sm-inline-block ml-1">Smith</span>
-                                    <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <!-- item-->
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-face-profile font-size-16 align-middle mr-1"></i> Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-credit-card-outline font-size-16 align-middle mr-1"></i> Billing</a>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-settings font-size-16 align-middle mr-1"></i> Settings</a>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock font-size-16 align-middle mr-1"></i> Lock screen</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout font-size-16 align-middle mr-1"></i> Logout</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- LOGO -->
+                                               <!-- LOGO -->
                         <div class="navbar-brand-box">
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="/" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <img src="assets/images/logo-sm-dark.png" alt="" height="22">
                                 </span>
@@ -83,7 +38,7 @@
                                 </span>
                             </a>
 
-                            <a href="index.html" class="logo logo-light">
+                            <a href="/" class="logo logo-light">
                                 <span class="logo-sm">
                                     <img src="assets/images/logo-sm-light.png" alt="" height="22">
                                 </span>
@@ -136,7 +91,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
-                                2020 © Xoric.
+                                {{ date('Y') }} © clientauthenticationservices.com
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-right d-none d-sm-block">

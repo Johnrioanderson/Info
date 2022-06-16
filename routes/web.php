@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\SubmitApplication;
+use App\Mail\ApplicationSubmit;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +27,11 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+// Route::get('/contact/send', function (Request $request) {
+//     Mail::to(config('contact.send_email_to'))->send(new ApplicationSubmit($request, "test123"));
+
+//     return view('contact');
+// });
+
+Route::post('/thankyou',[SubmitApplication::class,'submitFM'])->name('submit.form');

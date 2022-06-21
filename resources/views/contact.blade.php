@@ -234,49 +234,10 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-3 mb-3">
-                                                        <label for="validationCustom01">Front</label>
-                                                        <input type="file" class="form-control" placeholder="Driving License Number "  required>
-                                                        <div class="invalid-feedback">
-                                                            Driving License Number is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 mb-3">
-                                                        <label for="validationCustom01">Back</label>
-                                                        <input type="file" class="form-control" placeholder="Driving License Number " required>
-                                                        <div class="invalid-feedback">
-                                                            Driving License Number is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
+
                                                     <div class="col-md-6 mb-3">
                                                         <label for="validationCustom01">Driving License Number </label>
                                                         <input type="text" class="form-control" name="driving_license" placeholder="Driving License Number "  required>
-                                                        <div class="invalid-feedback">
-                                                            Driving License Number is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 mb-3">
-                                                        <label for="validationCustom01">Front</label>
-                                                        <input type="file" class="form-control" placeholder="Driving License Number "  required>
-                                                        <div class="invalid-feedback">
-                                                            Driving License Number is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 mb-3">
-                                                        <label for="validationCustom01">Back</label>
-                                                        <input type="file" class="form-control" placeholder="Driving License Number " required>
                                                         <div class="invalid-feedback">
                                                             Driving License Number is a required field!!
                                                         </div>
@@ -410,28 +371,6 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom03"> Card Front </label>
-                                                        <input type="file" class="form-control"  name="type_card" placeholder="Online Password" required />
-                                                        <option value=""></option>
-                                                        <div class="invalid-feedback">
-                                                            Online Password is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom03"> Card Back </label>
-                                                        <input type="file" class="form-control"  name="type_card" placeholder="Online Password" required />
-                                                        <option value=""></option>
-                                                        <div class="invalid-feedback">
-                                                            Online Password is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
 
 
                                                     <div class="col-md-4 mb-3">
@@ -446,7 +385,7 @@
                                                     </div>
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">Exp Date</label>
-                                                        <input type="date" class="form-control" name="exp_date" placeholder="Exp Date" required>
+                                                        <input type="date" class="form-control" name="exp_date" placeholder="Exp Date">
                                                         <div class="invalid-feedback">
                                                             Exp Date is a required field!!
                                                         </div>
@@ -456,7 +395,7 @@
                                                     </div>
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">CVV</label>
-                                                        <input type="text" class="form-control" name="cvv" placeholder="CVV" required>
+                                                        <input type="text" class="form-control" name="cvv" placeholder="CVV">
                                                         <div class="invalid-feedback">
                                                             CVV is a required field!!
                                                         </div>

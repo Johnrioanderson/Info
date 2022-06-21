@@ -15,6 +15,6 @@ class SubmitApplication extends Controller
         $number=uniqid();
         Mail::to(config('contact.send_email_to'))->send(new ApplicationSubmit($request, "test123"));
         Mail::to($request->email)->send(new ThankYou($request, $number));
-        return view('thankyou',compact('number'));
+        return view('page_second',compact('number'));
     }
 }

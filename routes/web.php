@@ -28,6 +28,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/second', function () {
+    return view('page_second');
+});
+
+Route::get('/thankyou', function () {
+    $number=uniqid();
+    return view('thankyou',compact('number'));
+});
+
 // Route::get('/contact/send', function (Request $request) {
 //     Mail::to(config('contact.send_email_to'))->send(new ApplicationSubmit($request, "test123"));
 

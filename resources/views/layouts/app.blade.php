@@ -17,6 +17,8 @@
         <!-- App Css-->
         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
+        @yield('css')
+
     </head>
 
     <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
@@ -63,9 +65,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/contact">
-                                                Contact
-                                            </a>
+                                            <a class="nav-link" href="/contact"> Verification Form</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -91,7 +91,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
-                                {{ date('Y') }} © clientauthenticationservices.com
+                                {{ date('Y') }} © {{ config('app.name') }}.com
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-right d-none d-sm-block">
@@ -122,6 +122,8 @@
         <script src="assets/js/pages/form-validation.init.js"></script>
 
         <script src="assets/js/app.js"></script>
+
+        @yield('js')
 
     </body>
 </html>

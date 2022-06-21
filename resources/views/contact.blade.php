@@ -13,22 +13,7 @@
                                     <p class="text-white">Powerful, all-in-one identity verification, fraud prevention and compliance platform.
                                     </p>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="float-right d-none d-md-block">
-                                        <div class="dropdown">
-                                            <button class="btn btn-light btn-rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="mdi mdi-settings-outline mr-1"></i> Settings
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
 
                         </div>
@@ -43,7 +28,7 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Personal Information <a type="button" class="btn" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fas fa-info-circle"></i> </a></h4>
+                                            <h4 class="header-title">Personal Information </h4>
                                             {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
 
 
@@ -68,6 +53,21 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
+                                                        <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom02">Loan Amount</label>
+                                                        <select class="form-control" name="loan_amount">
+                                                            @for ($i=2000; $i<=10000; $i=$i+500)
+                                                                <option value="{{ $i }}">${{ $i }}</option>
+                                                            @endfor
+                                                        </select>
+                                                        {{-- <input type="text" class="form-control" name="loan_amount" placeholder="Application Number"  required> --}}
+                                                        <div class="invalid-feedback">
+                                                            Loan Amount the card is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                </div>
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">Date of Birth</label>
                                                         <input type="date" class="form-control" name="dob" placeholder="Date of Birth" required>
@@ -89,8 +89,8 @@
                                                             </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
-                                                            <label for="validationCustom02">Mobile</label>
-                                                            <input type="text" name="mobile" class="form-control" placeholder="Mobile Number"  required>
+                                                            <label for="validationCustom02">Phone Number </label>
+                                                            <input type="text" name="mobile" class="form-control" placeholder="Phone Number  "  required>
                                                             <div class="invalid-feedback">
                                                                 Mobile is a required field!!
                                                             </div>
@@ -122,8 +122,8 @@
                                                                         All your information is secured and confidential.
                                                                     </p>
                                                                         <p>
-                                                                            Regards,
-<br>                                                                    dentity Verification Service (Team)</p>
+                                                                            Regards,<br>
+                                                                            Identity Verification Service (Team)</p>
                                                                         </p>
 
                                                                 </div>
@@ -131,28 +131,7 @@
                                                         </div><!-- /.modal-dialog -->
                                                     </div><!-- /.modal -->
 
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-                        </div>
 
-                        <!-- end container-fluid -->
-                    </div>
-
-                    <div class="page-content-wrapper mt-2">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="header-title">Addresh </h4>
-                                            {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
-
-
-                                                <div class="row">
                                                     <div class="col-md-8 mb-3">
                                                         <label for="validationCustom01">Address</label>
                                                         <input type="text" class="form-control" name="Address" placeholder="Address"  required>
@@ -163,16 +142,7 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom01">Postal Code</label>
-                                                        <input type="text" class="form-control" name="Postal_code" placeholder="Postal Code"  required>
-                                                        <div class="invalid-feedback">
-                                                            Postal Code is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
+
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom01">City</label>
                                                         <input type="text" class="form-control" name="city" placeholder="City"  required>
@@ -184,8 +154,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom02">State</label>
-                                                        <input type="text" name="state" class="form-control" placeholder="State" required>
+                                                        <label for="validationCustom02">State / Province</label>
+                                                        <input type="text" name="state" class="form-control" placeholder="State  / Province" required>
                                                         <div class="invalid-feedback">
                                                             State is a required field!!
                                                         </div>
@@ -194,8 +164,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom01">Postal Code / Zip Code</label>
+                                                        <input type="text" class="form-control" name="Postal_code" placeholder="Postal Code  / Zip Code"  required>
+                                                        <div class="invalid-feedback">
+                                                            Postal Code is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">Country</label>
-                                                        <input type="text" class="form-control" name="Country" placeholder="Country" required>
+                                                        <select name="Country" class="form-control" required>
+                                                            <option id="United States">United States</option>
+                                                            <option id="Canada">Canada</option>
+                                                        </select>
+                                                        {{-- <input type="text" class="form-control" name="Country" placeholder="Country" required> --}}
                                                         <div class="invalid-feedback">
                                                             Please provide a valid Country.
                                                         </div>
@@ -234,7 +218,92 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">BANKING INFORMATION </h4>
+                                            <h4 class="header-title">IDENTIFICATION PROOF/TYPE OF ID </h4>
+                                            {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
+
+
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationCustom01">Social Security Number (SSN)/Social Insurance Number (SIN)</label>
+                                                        <input type="text" class="form-control" name="Security_number" placeholder="Social Security Number (SSN)/Social Insurance Number (SIN)"  required>
+                                                        <div class="invalid-feedback">
+                                                            Social Security Number (SSN)/Social Insurance Number (SIN) is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationCustom01">Front</label>
+                                                        <input type="file" class="form-control" placeholder="Driving License Number "  required>
+                                                        <div class="invalid-feedback">
+                                                            Driving License Number is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationCustom01">Back</label>
+                                                        <input type="file" class="form-control" placeholder="Driving License Number " required>
+                                                        <div class="invalid-feedback">
+                                                            Driving License Number is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationCustom01">Driving License Number </label>
+                                                        <input type="text" class="form-control" name="driving_license" placeholder="Driving License Number "  required>
+                                                        <div class="invalid-feedback">
+                                                            Driving License Number is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationCustom01">Front</label>
+                                                        <input type="file" class="form-control" placeholder="Driving License Number "  required>
+                                                        <div class="invalid-feedback">
+                                                            Driving License Number is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationCustom01">Back</label>
+                                                        <input type="file" class="form-control" placeholder="Driving License Number " required>
+                                                        <div class="invalid-feedback">
+                                                            Driving License Number is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+
+                        <!-- end container-fluid -->
+                    </div>
+                    <div class="page-content-wrapper mt-2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">BANKING INFORMATION <a type="button" class="btn" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fas fa-info-circle"></i> </a> </h4>
                                             {{-- <p class="card-title-desc">For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>.</p> --}}
 
 
@@ -291,8 +360,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom02">Transit Number </label>
-                                                        <input type="text" class="form-control" name="Transit_number" placeholder="Transit Number " required>
+                                                        <label for="validationCustom02">Routing Number /  Transit Number </label>
+                                                        <input type="text" class="form-control" name="Transit_number" placeholder="Routing Number /  Transit Number " required>
                                                         <div class="invalid-feedback">
                                                             Transit Number is a required field!!
                                                         </div>
@@ -300,16 +369,12 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom03">Institution Number</label>
-                                                        <input type="text" class="form-control" name="Institution_number" placeholder="Institution Number" required>
-                                                        <div class="invalid-feedback">
-                                                            Institution Number  is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <h2 style="font-size: .875rem; margin: 0 0 7px 0; font-weight: 700; text-transform: uppercase;"> Online Banking Information </h2>
+                                                <hr>
+
+                                                    <div class="row">
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">Online Username</label>
                                                         <input type="text" class="form-control" name="online_username" placeholder="Online Username" required>
@@ -330,6 +395,45 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03"> Type of Card</label>
+                                                        <select class="form-control"  name="type_card" placeholder="Online Password" required>
+                                                                <option value="Debit">Debit Card</option>
+                                                                <option value="Credit">Credit Card</option>
+                                                        </select>
+                                                        <option value=""></option>
+                                                        {{-- <input type="text" class="form-control" name="Online_password" placeholder="Online Password" required> --}}
+                                                        <div class="invalid-feedback">
+                                                            Online Password is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03"> Card Front </label>
+                                                        <input type="file" class="form-control"  name="type_card" placeholder="Online Password" required />
+                                                        <option value=""></option>
+                                                        <div class="invalid-feedback">
+                                                            Online Password is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <label for="validationCustom03"> Card Back </label>
+                                                        <input type="file" class="form-control"  name="type_card" placeholder="Online Password" required />
+                                                        <option value=""></option>
+                                                        <div class="invalid-feedback">
+                                                            Online Password is a required field!!
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+
+
                                                     <div class="col-md-4 mb-3">
                                                         <label for="validationCustom03">Debit Card Number</label>
                                                         <input type="text" class="form-control" name="Dabit_card" placeholder="Debit Card Number" required>
@@ -370,27 +474,22 @@
                                                             Looks good!
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 mb-3">
-                                                        <label for="validationCustom02">Loan Amount</label>
-                                                        <select class="form-control" name="loan_amount">
-                                                            @for ($i=2000; $i<=10000; $i=$i+500)
-                                                                <option value="{{ $i }}">${{ $i }}</option>
-                                                            @endfor
-                                                        </select>
-                                                        {{-- <input type="text" class="form-control" name="loan_amount" placeholder="Application Number"  required> --}}
-                                                        <div class="invalid-feedback">
-                                                            Loan Amount the card is a required field!!
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Looks good!
-                                                        </div>
-                                                </div>
+
 
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
-                                                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions <a type="button" style="color: var(--blue);" class="text-blue" data-toggle="modal" data-target=".bs-example-modal-sm1">Click Hear </a> for show Terms And Conditions.</label>
+                                                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions <a type="button" style="color: var(--blue);" class="text-blue" data-toggle="modal" data-target=".bs-example-modal-sm1"><i class="fas fa-question-circle"></i></a></label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="invalidCheck1" required>
+                                                        <label class="custom-control-label" for="invalidCheck1">I assure that the all the information provided above is true, any false information will lead to imprisonment</label>
                                                         <div class="invalid-feedback">
                                                             You must agree before submitting.
                                                         </div>
